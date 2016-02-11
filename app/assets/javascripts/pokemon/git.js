@@ -1,0 +1,3 @@
+Pokemon.prototype.fetchDescription = function(){
+
+}

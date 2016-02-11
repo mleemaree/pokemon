@@ -6,6 +6,7 @@
 		this.uri = uri;
 		this._attrs = {};
 		this.img = "";
+		this.description = "";
 	}
 
 	Pokemon.prototype.fetchPokemon = function(){
@@ -30,7 +31,7 @@
 
 	Pokemon.prototype.getDescription = function(){
 		var that = this;
-		this._attrs.desriptions.map(function(description){
+		this._attrs.desriptions.find(function(description){
 
 		});
 	}
@@ -43,6 +44,6 @@
 		$('.height').html(this._attrs.height);
 		$('.weight').html(this._attrs.weight);
 		var picture = $('<img>', { src: "http://pokeapi.co" + this.img });
-		$('.picture').append(picture);
+		$('.picture').html(picture);
 	}
 })();
